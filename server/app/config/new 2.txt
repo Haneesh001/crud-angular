@@ -1,0 +1,95 @@
+
+
+
+
+-------Organisation_Ownership_Table---------------------------------------------------------------
+
+ int Id (PK),
+Name Varchar(20)
+
+
+--------------User_Ownership-----------------------------
+
+Int id PK,
+String Name,
+String UserName
+String Password,
+
+
+-------------------Acess_ROLE_Ownership-----------
+
+Int id PK,
+String Name,
+String Code,
+bool HasOrgLevelAcess
+
+----------Device_Ownership-------
+
+Int id PK,
+String IMIE,
+String DeviceId,
+Srting RegCode
+
+------------Device_History_Ownership------------
+Int id PK,
+string Status,
+string Remarks
+Date StatusApplicableForm,
+File DocumentCopy
+
+
+----------------Device_Allocation_Group------------------
+
+Int id PK,
+String GroupNumber,
+string Remarks,
+File DocumentCopy
+
+-------------------------Lot-------------
+
+Int id PK,
+String LotNumber,
+String LotType,
+string Remarks,
+File DocumentCopy
+
+------------------SimCard_History-------------------
+
+Int id PK,
+Date From,
+Date To
+string Remarks,
+
+
+--------------------Spare_Part__Usage-------------
+Int id PK,
+Int UsedCount
+DateTime UsedOn
+string Remarks,
+
+
+---------------------------Sim_Card------------------------
+Int id PK,
+string SimNumbar
+
+
+
+--------------Spare_Part---------------------
+Int id PK,
+String PartNO
+String Description,
+Int AvailableCount
+
+----------Spare_PArt_Record------------------
+
+Int id PK,
+string Remarks,
+int Count,
+bool IsReduction
+
+
+
+
+
+
+
